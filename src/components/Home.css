@@ -1,0 +1,85 @@
+/* .primary{
+    color: aqua;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+   
+}
+.primary li link{
+    text-decoration: none;
+} */
+
+
+/* Container for all the product cards */
+.product-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+    margin-top: 90px;
+  }
+  
+  /* Individual card style */
+  .card {
+    width: 22rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+   
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Image styling */
+  .card-img {
+    width: 100%; 
+    height: 10rem;
+    object-fit: contain;
+  }
+  
+  /* Card body styling */
+  .card-body {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  /* Title styling */
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Price styling */
+  .card-price {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  /* Button container */
+  .button-div {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Add to cart button styling */
+  .add-to-cart-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #0056b3;
+  }
+  

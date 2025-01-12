@@ -1,0 +1,129 @@
+.main-container {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .card-section {
+    display: flex;
+    justify-content: center;
+  margin-left: 190px;
+    align-items: flex-start;
+    margin-top: 20px;
+    flex-direction: column; /* Stack the card details below the images */
+  }
+  
+  .card-details {
+    display: flex;
+    flex-direction: column; /* Stack images vertically with details below */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    margin-bottom: 40px;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: space-between; /* Make images appear in the same row */
+    margin-bottom: 20px; /* Space between images and the details below */
+  }
+  
+  .image-container img {
+    width: 30%; /* Adjust width of each image */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .details {
+    width: 100%; /* Use full width for details */
+  }
+  
+  .details p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+    display: flex;
+    
+  }
+  
+  .details p strong {
+    font-weight: bold;
+    color: #333;
+  }
+  
+
+  .details table {
+    width: 100%;
+    border-spacing: 0;
+    margin-top: 20px;
+  }
+  
+  .details table td {
+    padding: 50px;
+    vertical-align: top;
+  }
+  
+  @media (max-width: 768px) {
+    .card-details {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .image-container {
+      width: 100%; /* Use full width for images container */
+      justify-content: center; /* Center images */
+    }
+  
+    .image-container img {
+      width: 80%; /* Adjust image size on smaller screens */
+      margin-bottom: 10px; /* Space between images */
+    }
+  
+    .details {
+      width: 100%;
+    }
+  }
+  .review-list {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Add spacing between reviews */
+  }
+  
+  .review-item {
+    display: flex;
+    flex-direction: column; /* Ensure the rating and comment are stacked */
+    padding: 10px;
+    align-items: start;
+    gap: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .review-rating {
+    font-weight: bold;
+    color: #fff;
+    background-color: green;
+    padding: 2px 5px;
+    border-radius: 5px;
+    display: inline; /* Try inline instead of inline-block */
+    white-space: nowrap;
+
+  }
+  
+  .review-comment {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 5px;
+  }
+  
